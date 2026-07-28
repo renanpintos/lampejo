@@ -24,7 +24,7 @@ var mouseX = 0, mouseY = 0,
 				preto = 0x000000;
                 laranja = 0xFF6633;
                 
-                var material = new THREE.LineBasicMaterial({color: branco, opacity: 0});
+                var material = new THREE.LineBasicMaterial({color: vermelho, opacity: 0});
 
                 var line1, line2;
 				
