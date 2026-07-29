@@ -16,11 +16,31 @@
 		<!-- <script src="js/renderers/Projector.js"></script> -->
 		<!-- <script src="js/renderers/CanvasRenderer.js"></script> -->
 
-		 <!-- Revised -->
+		<script>
+			const param = new URLSearchParams(window.location.search);
+			const version = param.get('version' || '1'); 
+
+			const mapScripts = {
+				'1': 'js/linhasMao.js',
+				'2': 'js/aprisionado.js',
+				'3': 'js/linhasPeito.js',
+				'4': 'js/objetoMao.js',
+				'5': 'js/linhasMouse.js',
+				'6': 'js/objetoLines.js',
+			};
+
+			const scriptVersion = mapScripts[version] || mapScripts['1'];
+
+			const scriptElement = document.createElement('script');
+			scriptElement.src = scriptVersion;
+			document.body.appendChild(scriptElement);
+		</script>
+
+		<!-- Reviewed -->
 		<!-- <script src="js/linhasMao.js"></script> -->
-		<script src="js/aprisionado.js"></script>
+		<!-- <script src="js/aprisionado.js"></script> -->
 		
-		<!-- Need revision -->
+		<!-- Needs revision -->
         <!--<script src="js/linhasPeito.js"></script>-->
 		<!-- <script src="js/objetoCabeca.js"></script>	 -->
 		<!-- <script src="js/objetoMao.js"></script> -->

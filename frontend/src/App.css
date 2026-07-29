@@ -1,5 +1,54 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-height: 100%;
+  width: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #f1eff1;
+  color: #36094b;
+  border-radius: 120px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  width: 100%;
+  background-color: #ffffff;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.play-button {
+    border-radius: 120px;
+    border: 7px solid #36094b;
+    padding: 2px 25px;
+    margin: 10px;
+    font-size: 1.6em;
+    font-weight: 500;
+    font-family: monospace;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: border-color 0.25s;
+    color: #36094b;
+    display: flex;
+    align-items: center;
+
+    img {
+      margin: 10px;
+      width: 50px; 
+      height: 50px;
+    }
 }
