@@ -8,7 +8,7 @@ function App() {
   };
 
   const iniciarLampejo = () => {
-    window.location.href = '/Lampejo_index.html';
+    window.location.href = `${import.meta.env.BASE_URL}Lampejo_index.html`;
   };
 
   return (
@@ -19,10 +19,10 @@ function App() {
         style={{ cursor: 'pointer', border: 'none', background: 'transparent' }}
       >
         <img 
-          src="/images/play_branco.jpg" 
+          src={`${import.meta.env.BASE_URL}images/play_branco.jpg`}
           alt="Botão Play" 
-          width="200" 
-          height="200" 
+          width="150" 
+          height="150" 
         />
       </button>
     </>
